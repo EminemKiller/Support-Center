@@ -1,10 +1,6 @@
 # 🎤 Eminem Support Centre
 
-[![GitHub stars](https://img.shields.io/github/stars/YourUsername/Eminem-Support-Centre?style=social)](https://github.com/EminemKiller/Support-Center/stargazers)
-[![GitHub issues](https://img.shields.io/github/issues/YourUsername/Eminem-Support-Centre)](https://github.com/EminemKiller/Support-Center/issues)
-[![License](https://img.shields.io/github/license/EminemKiller/Support-Center)](LICENSE)
-
-A fan-driven support platform dedicated to **Eminem fans** – offering guides, FAQs, and a community space to get help and stay updated.
+Welcome to our official support page!
 
 ---
 

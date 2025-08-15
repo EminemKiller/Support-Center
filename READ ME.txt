@@ -1,0 +1,81 @@
+Welcome to the Eminem Help Centre management.
+
+Here are the rules applying for your management of our Support Centre.
+
+1. Be Professional and Courteous
+
+Always greet users politely.
+
+Never use offensive language or sarcasm.
+
+Respond promptly and clearly.
+
+2. Verify User Information
+
+Check the user’s email before taking action.
+
+Confirm their issue category to ensure proper routing.
+
+3. Categorize Issues Properly
+
+Eminem Storage Issues: Scripts, reports, usage problems.
+
+Eminem Republic Issues: Member reports, account issues.
+
+Other Issues: Custom problems reported by users.
+
+4. Document All Interactions
+
+Maintain a log of tickets for tracking purposes.
+
+Include:
+
+User’s email and name
+
+Issue category and sub-category
+
+Summary of the problem and solution
+
+5. Respond Timely
+
+Try to acknowledge new requests within 24 hours.
+
+Provide updates if the issue takes longer to resolve.
+
+6. Maintain Privacy and Security
+
+Never share user information with others.
+
+Protect sensitive data, including emails and scripts.
+
+7. Follow Up
+
+After resolving an issue, confirm with the user that the solution worked.
+
+Encourage feedback to improve support quality.
+
+8. Escalate When Necessary
+
+If an issue cannot be resolved, forward it to higher-level support.
+
+Clearly document what has been done before escalation.
+
+9. Avoid Personal Bias
+
+Treat every request equally, regardless of the user.
+
+Stay neutral and focus on solutions.
+
+10. Continuous Improvement
+
+Regularly review tickets to identify common issues.
+
+Update FAQs, guides, and workflows accordingly.
+
+Messing with our code in any way may lead to restrictions.
+
+Last updated since 2001/04/15
+
+Eminem Republic.
+
+All Rights Reserved.

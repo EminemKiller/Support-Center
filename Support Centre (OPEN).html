@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eminem Republic Support</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #000, #222);
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .form-container {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        form {
+            background: #333;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        input, select, textarea {
+            margin-bottom: 10px;
+            padding: 8px;
+            border-radius: 5px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Eminem Republic</h1>
+        <h2>Welcome to our official support website.</h2>
+        <button id="contactBtn">Contact Support</button>
+    </div>
+
+    <div id="supportFormContainer" class="form-container hidden">
+        <form id="supportForm" action="https://formspree.io/f/meozdlqa" method="POST">
+            <label>Email:</label>
+            <input type="email" name="email" required>
+
+            <label>Name (optional):</label>
+            <input type="text" name="name">
+
+            <label>Issue:</label>
+            <select id="mainIssue" name="mainIssue" required>
+                <option value="">Select an issue</option>
+                <option value="storage">Issue with Eminem Storage</option>
+                <option value="republic">Issue with Eminem Republic</option>
+                <option value="other">Something else</option>
+            </select>
+
+            <div id="subOptions"></div>
+
+            <label>Details:</label>
+            <textarea name="details" rows="5" placeholder="Describe your issue..." required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        const contactBtn = document.getElementById("contactBtn");
+        const supportFormContainer = document.getElementById("supportFormContainer");
+        const mainIssue = document.getElementById("mainIssue");
+        const subOptions = document.getElementById("subOptions");
+
+        contactBtn.addEventListener("click", () => {
+            supportFormContainer.classList.toggle("hidden");
+        });
+
+        mainIssue.addEventListener("change", () => {
+            const value = mainIssue.value;
+            let html = "";
+
+            if(value === "storage"){
+                html += `
+                <label>Storage Issue Type:</label>
+                <select name="subIssue" required>
+                    <option value="">Select one</option>
+                    <option value="reportScript">Report a script</option>
+                    <option value="makeScript">Making a script</option>
+                    <option value="issueMakingScript">An issue with making a script</option>
+                    <option value="useScript">Issue with using a script</option>
+                    <option value="reportIssue">Report an issue</option>
+                </select>
+                `;
+            } else if(value === "republic"){
+                html += `
+                <label>Republic Issue Type:</label>
+                <select name="subIssue" required>
+                    <option value="">Select one</option>
+                    <option value="reportMember">Report a Member</option>
+                    <option value="reportIssue">Report an issue</option>
+                    <option value="other">Something else</option>
+                </select>
+                `;
+            } else if(value === "other"){
+                html += `
+                <label>Describe your issue:</label>
+                <input type="text" name="subIssue" placeholder="Write your issue here..." required>
+                `;
+            }
+
+            subOptions.innerHTML = html;
+        });
+    </script>
+</body>
+</html>
